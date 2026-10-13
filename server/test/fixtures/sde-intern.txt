@@ -1,0 +1,20 @@
+Software Development Engineer Intern at Acme Labs
+
+About Acme Labs
+Acme Labs is hiring students to build our full stack platform. We express interest in curious people.
+
+What you'll do:
+- Build REST APIs using Node.js and Express
+- Write SQL queries against PostgreSQL and design schemas
+- Build UI components with React
+
+Requirements:
+• Strong understanding of data structures and algorithms
+• Proficiency in JavaScript or Java
+• Knowledge of Git and version control
+• Currently pursuing a B.Tech in Computer Science
+
+Nice to have:
+• Familiarity with Docker
+• Experience with AWS or Redis
+• Understanding of operating systems and computer networks
