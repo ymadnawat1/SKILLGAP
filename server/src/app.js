@@ -7,6 +7,8 @@ import { api } from './routes/api.js';
 export function createApp({ clientOrigin = process.env.CLIENT_ORIGIN } = {}) {
   const app = express();
   app.disable('x-powered-by');
+  // Behind a host's proxy (Render etc.) set TRUST_PROXY=1 so rate limiting sees each visitor's real IP.
+  if (process.env.TRUST_PROXY) app.set('trust proxy', Number(process.env.TRUST_PROXY));
   app.use(cors({ origin: clientOrigin ? clientOrigin.split(',') : true }));
   app.use(express.json({ limit: '100kb' }));
   app.use(rateLimit({ windowMs: 60_000, limit: 120, standardHeaders: true, legacyHeaders: false }));
